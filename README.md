@@ -2,10 +2,10 @@
   <br>
   <img src="https://github.com/raffaelecalza/transmission-telegram-bot/blob/master/logo/transmission-bot.png?raw=true" alt="WebTorrent" width="200">
   <br>
-  Transmission Bot for Telegram
+  Transmission Bot
   <br>
 </h1>
-<p align="center">Do you like the project? <a href="http://bit.ly/transmission-bot">Buy me a coffee or a beer 🍻</a></p>
+<p align="center">Do you like the project? Buy me a coffee or a beer 🍻</p>
 So, you want to controll your torrent status from anywhere in the world, but you don't know how to do this, right? Here is the solution, this is a simple telegram bot that allows you to check the status of your torrents, add, stop, remove, briefly these are all the basic actions that you do with the program or web interface.
 
 #### Summary:
@@ -22,11 +22,8 @@ So, you want to controll your torrent status from anywhere in the world, but you
 * <b>Torrent remove</b> - Remove a torrent;
 * <b>Add torrent</b> - Add a torrent from a <code>.torrent</code> file or from an url;
 
-## How to install it
-Clone the repository with <code>git clone https://github.com/raffaelecalza/transmission-telegram-bot.git</code> or download it as a zip file from [here](https://github.com/raffaelecalza/transmission-telegram-bot/releases/latest).
 ### 1) Register your bot name
 First of all you have to register your bot's name. To do this, begin a new chat to <b>@BotFather</b>. Send <code>/newbot</code> command. Then send  to him the name of your bot (e.g. My Wonderful Bot). Then send a username for the bot (NOTE: this must end with the word 'bot'), e.g. MyWonderfulBot. After that the Bot Father will send you a message that contains the TOKEN for the bot. Save it because in the fourth step we'll use it.<br />
-<img src="https://github.com/raffaelecalza/transmission-telegram-bot/blob/master/screenshot/1.jpg?raw=true" width="33%" /> <img src="https://github.com/raffaelecalza/transmission-telegram-bot/blob/master/screenshot/2.jpg?raw=true" width="33%" /> <img src="https://github.com/raffaelecalza/transmission-telegram-bot/blob/master/screenshot/3.jpg?raw=true" width="33%" />
 
 ### 2) Set bot commands (Optional)
 This step is optional because the bot has a custom keyboard, but I suggest you to set the commands.
@@ -41,8 +38,6 @@ torrentremove - Remove a torrent
 settings - Set your preferences
 help - Get the list of available commands
 ```
-<h4 align="center"><img src="https://github.com/raffaelecalza/transmission-telegram-bot/blob/master/screenshot/4.jpg?raw=true" width="33%" /></h4>
-
 ### 3) Install NodeJS, NPM and PM2
 Go to the [next step](#4-configure-your-bot) if you have already installed NodeJS, NPM and PM2.
 #### Install NodeJS and NPM
@@ -74,7 +69,6 @@ In the transmission section, insert the ip address of the computer where transmi
 ```
 If you don't know your chat id, open a terminal and go to your bot repo's folder, open the <code>bot/</code> folder then start your bot (after have installed all packages in the 3 step) with the command <code>node bot.js</code>. Try to send a message to your bot, you'll see in the console your chat id, hit <code>Ctrl + C</code> to stop the bot and insert your chat id in the config file.<br />
 **NOTE: you must have inserted at least the bot token in the config file but i recommend you to configure also Transmission before running your bot.**
-<h4 align="center"><img src="https://github.com/raffaelecalza/transmission-telegram-bot/blob/master/screenshot/5.gif?raw=true" /></h4>
 
 ### 5) Run your bot
 Now you haven't to wait anymore, go to your bot folder and type <code>pm2 start bot.js</code>. Then your bot will start in background.
